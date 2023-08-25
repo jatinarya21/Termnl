@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-13UPg3KtRrbNehG55PuwH5LBmtSsGgdiHs7PUsckbBFkfKtG/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/Dist/output.css">
+    <title>Document</title>
+    <link rel="shortcut icon" href="./images/java.png" type="image/x-icon">
+</head>
+
+<body class=" sm:overflow-scroll">
+
+    <header class="bg-slate-800">
+        <!-- Nav-Bar Start -->
+        <nav class="container mx-auto px-4">
+            <div class="flex justify-between">
+                <img src="./images/logo.png" alt="">
+                <ul id="nav-bar"
+                    class="flex flex-col gap-4 justify-center items-center fixed w-full min-h-screen bg-slate-800 left-[-100%] top-0 duration-500 z-10 md:flex-row md:static md:w-auto md:min-h-full md:bg-inherit">
+                    <li><a class="text-white" href="">Home</a></li>
+                    <li><a class="text-white" href="">About Us</a></li>
+                    <li><a class="text-white" href="">Blog</a></li>
+                    <li><a class="text-white" href="">Contact Us</a></li>
+                </ul>
+                <input class="z-10 relative" onclick="openNav()" type="checkbox" id="nav" hidden>
+                <label id="" for="nav" class=" w-7 h-7 pt-4 flex flex-col gap-2 z-10 relative md:hidden ">
+                    <span class=" border-white w-6 border-2 "></span>
+                    <span class=" border-white w-6 border-2"></span>
+                    <span class=" border-white w-6 border-2"></span>
+                </label>
+            </div>
+        </nav>
+        <!-- Nav-Bar end -->
+        <!-- Hero section start -->
+        <section class="bg-[url('./images/hero-section-bg.png')] h-screen bg-no-repeat bg-cover">
+            <div class="container px-4 mx-auto">
+                <div class=" flex slicker ">
+                    <div class="pt-56 sm:pt-40 md:pt-28 lg:pt-36">
+                        <h2 class="text-2xl font-bold text-center text-white sm:text-5xl md:text-6xl  lg:text-8xl">
+                            Et dictumst <span class="text-blue-600">diam pharetra</span> volutpat.
+                        </h2>
+                        <p class="text-center text-xs   text-white font-semibold pt-5 sm:text-base md:text-2xl">Dolor
+                            lacus nisl at elementum,
+                            aliquet ac. Consectetur viverra ornare vel morbi ut in
+                            tincidunt viverra. Aenean feugiat malesuada nunc aliquet vitae, commodo, pellentesque
+                            laoreet amet.</p>
+                        <div class="text-center pt-5 sm:pt-10">
+                            <button
+                                class="bg-blue-600 text-xs py-2 px-2 text-white font-bold sm:text-xl  rounded-full sm:py-4 sm:px-7">GET
+                                STARTED</button>
+                        </div>
+                    </div>
+                    <div class="pt-36">
+                        <h2 class="text-8xl font-bold text-center text-white">
+                            Et dictumst <span class="text-blue-600">diam pharetra</span> volutpat.
+                        </h2>
+                        <p class="text-center text-2xl text-white font-semibold pt-5">Dolor lacus nisl at elementum,
+                            aliquet ac. Consectetur viverra ornare vel morbi ut in
+                            tincidunt viverra. Aenean feugiat malesuada nunc aliquet vitae, commodo, pellentesque
+                            laoreet amet.</p>
+                        <div class="text-center pt-10">
+                            <button class="bg-blue-600 text-white font-bold  rounded-full py-4 px-7">GET
+                                STARTED</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- hero section end -->
+    </header>
+    <!-- Section 2 start -->
+    <section class="bg-slate-200 py-14 md:py-8">
+        <div class="container px-4 mx-auto">
+            <div class="flex flex-col  items-center md:flex-row ">
+                <div class="w-full md:w-1/4">
+                    <h2 class="text-blue-600 text-5xl font-bold text-center md:text-start md:text-2xl lg:text-3xl">What
+                        <span class="text-black">we
+                            do?</span></h2>
+                </div>
+                <div class="w-full md:w-3/4">
+                    <p class=" text-base font-normal text-center pt-3 md:px-4">We believe in developing useful software
+                        instead of just
+                        fulfilling initial requirements.
+                        During
+                        the past 10 years, with an agile mindset, we have delivered 100+ different projects,
+                        ranging
+                        from startups to enterprises.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section 2 end -->
+    <!-- Section 3 start -->
+    <section class="md:py-12">
+        <div class="container px-4 mx-auto">
+            <div class="flex flex-col md:flex-row">
+                <div class="w-full md:w-1/2">
+                    <img class="w-full" src="./images/mobile-app-1.png" alt="">
+                </div>
+                <div class="w-full md:w-1/2  md:pt-12 lg:pt-20">
+                    <h2 class="text-3xl text-center font-bold md:text-2xl lg:text-4xl lg:text-left">Application <span
+                            class="text-blue-600">Modernization</span></h2>
+                    <p
+                        class="text-base text-center font-normal leading-6 pt-6 md:text-base md:pt-2 lg:text-base lg:text-left">
+                        AgileCube has 10 years of experience in consulting,
+                        to enable a continuous usage of past IT
+                        investments and support clients to avoid unnecessary project restarts and costs. AgileCube has
+                        10
+                        years of experience in consulting, to enable Modernizing or reengineering an application
+                        includes
+                        code assessment, preparation for cloud migration under a refreshed, up-to-date infrastructure
+                        and
+                        software environment, and application containerization for faster loading times.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section 3 end -->
+    <!-- Section 4 Start -->
+    <section>
+        <div class="container px-4 mx-auto">
+            <div class="flex items-center flex-col-reverse md:flex-row ">
+                <div class="w-full md:w-1/2">
+                    <h2 class="text-3xl text-center font-bold lg:text-4xl lg:text-left">Product<span
+                            class="text-blue-600"> Development</span></h2>
+                    <p class="text-base text-center font-normal pt-6 lg:text-left">The company’s agile, comprehensive,
+                        and future-proof product
+                        engineering services are providing
+                        support for both fresh startups, from the initial idea to post-delivery upgrades, and mature
+                        companies in need of product development.</p>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <div class="flex justify-center">
+                        <img class="w-full" src="./images/home-screen-1.png" alt="home_screen"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section 4 End -->
+    <!-- Section 5 Start -->
+    <section class="md:py-12">
+        <div class="container px-4 mx-auto">
+            <div class="flex items-center flex-col md:flex-row">
+                <div class="w-full md:w-1/2">
+                    <div>
+                        <img class="w-full" src="./images/JavaScript-img-1.png" alt="javascript-img">
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <h2 class="text-3xl text-center font-bold text-blue-600 lg:text-4xl lg:text-left">Application <span
+                            class="text-black">Development</span>
+                    </h2>
+                    <p class="text-base text-center font-normal pt-6 pb-3 lg:text-left">Invent, build, integrate, scale,
+                        and upgrade your applications
+                        with AgileCube! For more than
+                        a decade, we have been harnessing digital technologies for the benefit of Fortune 500
+                        businesses, mid and large enterprises, and startups across a variety of industries.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section 5 End -->
+    <!-- footer start -->
+    <footer>
+        <section class="bg-slate-800 py-6 md:py-14">
+            <div class="container px-4 mx-auto">
+                <div class="flex flex-col  md:flex-row ">
+                    <div class="w-full md:w-3/4">
+                        <img src="./images/logo.png" alt="">
+                        <p class="text-white w-72 sm:w-80 pt-4">Dolor lacus nisl at elementum, aliquet ac. Consectetur
+                            viverra
+                            ornare vel morbi ut in tincidunt
+                            viverra.</p>
+                    </div>
+                    <div class="w-full md:w-1/4">
+                        <div class="pt-12">
+                            <div class="flex gap-4">
+                                <img src="./images/mail-icon.png" alt="">
+                                <p class="text-white">termnl@gmail.com</p>
+                            </div>
+                            <div class="flex gap-4 pt-3">
+                                <img src="./images/phone-icon.png" alt="">
+                                <p class="text-white">1234567890</p>
+                            </div>
+                            <div class="flex gap-4 pt-3">
+                                <img src="./images/location-icon.png" alt="">
+                                <p class="text-white">Ultrices condimentum non, ac</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-gray-600">
+            <div class="container px-4 mx-auto py-5">
+                <h2 class="text-center text-white text-base font-normal">Copyright @ 2021</h2>
+            </div>
+        </section>
+    </footer>
+    <!-- footer end -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+        integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        function openNav() {
+            document.getElementById("nav-bar").classList.toggle("left_0")
+            document.body.classList.toggle("overflow-hidden")
+        }
+
+        $('.slicker').slick({
+            dots: false,
+            infinite: true,
+            speed: 500,
+            fade: true,
+            cssEase: 'linear',
+            slidesToShow: 1,
+        });
+    </script>
+
+</body>
+
+</html>
