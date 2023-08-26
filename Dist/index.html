@@ -34,6 +34,17 @@
     <title>Document</title>
     <link rel="shortcut icon" href="./images/JavaScript-img-1.png" type="image/x-icon">
 </head>
+<!-- preloader -->
+<!-- <div id="preloader"
+    class="bg-black fixed h-screen top-0 start-0 w-full flex justify-center text-center items-center z-30">
+    <span
+        class="inline-flex text-5xl overflow-y-hidden overflow-x-hidden animate-type group-hover:animate-type-reverse whitespace-nowrap text-brand-accent will-change-transform text-white">
+        Loading...
+    </span>
+    <span
+        class="box-border inline-block w-1 h-10 ml-2 -mb-2 bg-white md:-mb-4 md:h-16 animate-cursor will-change-transform"></span>
+</div> -->
+<!-- preloader -->
 
 <body class=" sm:overflow-scroll">
 
@@ -44,10 +55,10 @@
                 <img src="./images/logo.png" alt="">
                 <ul id="nav-bar"
                     class="flex flex-col gap-4 justify-center items-center fixed w-full min-h-screen bg-slate-800 left-[-100%] top-0 duration-500 z-10 md:flex-row md:static md:w-auto md:min-h-full md:bg-inherit">
-                    <li><a class="text-white" href="">Home</a></li>
-                    <li><a class="text-white" href="">About Us</a></li>
-                    <li><a class="text-white" href="">Blog</a></li>
-                    <li><a class="text-white" href="">Contact Us</a></li>
+                    <li><a class="text-white hover:text-blue-600" href="">Home</a></li>
+                    <li><a class="text-white hover:text-blue-600" href="">About Us</a></li>
+                    <li><a class="text-white hover:text-blue-600" href="">Blog</a></li>
+                    <li><a class="text-white hover:text-blue-600" href="">Contact Us</a></li>
                 </ul>
                 <input class="z-10 relative" onclick="openNav()" type="checkbox" id="nav" hidden>
                 <label id="" for="nav" class=" w-7 h-7 pt-4 flex flex-col gap-2 z-10 relative md:hidden ">
@@ -73,7 +84,7 @@
                             laoreet amet.</p>
                         <div class="text-center pt-5 sm:pt-10">
                             <button
-                                class="bg-blue-600 text-xs py-2 px-2 text-white font-bold sm:text-xl  rounded-full sm:py-4 sm:px-7">GET
+                                class="bg-blue-600 text-xs py-2 px-2 text-white font-bold sm:text-xl  rounded-full sm:py-4 sm:px-7 hover:text-blue-600 hover:bg-transparent hover:border-blue-600 hover:border-b-2">GET
                                 STARTED</button>
                         </div>
                     </div>
@@ -105,7 +116,8 @@
                             do?</span></h2>
                 </div>
                 <div class="w-full md:w-3/4">
-                    <p class=" text-base font-normal text-center pt-3 md:px-4">We believe in developing useful software
+                    <p class=" text-base font-normal text-center pt-3 md:px-4 lg:pr-36">We believe in developing useful
+                        software
                         instead of just
                         fulfilling initial requirements.
                         During
@@ -187,6 +199,86 @@
         </div>
     </section>
     <!-- Section 5 End -->
+    <!-- section 6 start -->
+    <section>
+        <div class="container px-4 mx-auto">
+             <div>
+                 <h2 class="text-center text-4xl font-bold">Our services</h2>
+                 <div class="flex justify-center  pt-6">
+                     <div class="line bg-black w-14 h-1 rounded-full "></div>
+                 </div>
+                 <p class="text-center pt-3 text-sm sm:text-lg lg:px-48">We provide to you the best choiches for you. Adjust it to your health needs and make sure your
+                     undergo treatment with our highly qualified doctors you can consult with us which type of service
+                     is suitable for your health</p>
+             </div>
+            <div class="flex flex-wrap justify-center">
+                <div class="w-full md:w-[50%] xl:w-[33%] px-12 py-12 ">
+                    <div
+                        class="max-w-[350px]  h-[350px] group card bg-white px-14 py-12   flex-col shadow-md rounded-3xl hover:cursor-pointer hover:scale-[1.02] hover:shadow-2xl transition-all duration-[300ms]">
+
+                        <img src="./images/search-img.png" alt="">
+
+                        <h1 class="text-black font-bold text-xl mt-3">Search doctor</h1>
+                        <p class="mt-3">Choose your doctor from thousands of specialist, general, and trusted hospitals
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full md:w-[50%] xl:w-[33%] px-12 py-12 ">
+                    <div
+                        class="max-w-[350px] h-[350px] group card bg-white px-14 py-12   flex-col shadow-md rounded-3xl hover:cursor-pointer hover:scale-[1.02] hover:shadow-2xl transition-all duration-[300ms]">
+
+                        <img src="./images/medicine-box.png" alt="">
+
+                        <h1 class="text-black font-bold text-xl mt-3">Online pharmacy</h1>
+                        <p class="mt-3">Buy your medicines with our mobile application with a simple delivery system</p>
+                    </div>
+                </div>
+                <div class="w-full md:w-[50%] xl:w-[33%] px-12 py-12 ">
+                    <div
+                        class="max-w-[350px] h-[350px] group card bg-white px-14 py-12   flex-col shadow-md rounded-3xl hover:cursor-pointer hover:scale-[1.02] hover:shadow-2xl transition-all duration-[300ms]">
+
+                        <img src="./images/consulation.png" alt="">
+
+                        <h1 class="text-black font-bold text-xl mt-3">Consultation</h1>
+                        <p class="mt-3">Free consultation with our trusted doctors and get the best recomendations</p>
+                    </div>
+                </div>
+                <div class="w-full md:w-[50%] xl:w-[33%] px-12 py-12 ">
+                    <div
+                        class="max-w-[350px] h-[350px] group card bg-white px-14 py-12   flex-col shadow-md rounded-3xl hover:cursor-pointer hover:scale-[1.02] hover:shadow-2xl transition-all duration-[300ms]">
+
+                        <img src="./images/details.png" alt="">
+
+                        <h1 class="text-black font-bold text-xl mt-3">Details info</h1>
+                        <p class="mt-3">Free consultation with our trusted doctors and get the best recomendations</p>
+                    </div>
+                </div>
+                <div class="w-full md:w-[50%] xl:w-[33%] px-12 py-12 ">
+                    <div
+                        class="max-w-[350px] h-[350px] group card bg-white px-14 py-12   flex-col shadow-md rounded-3xl hover:cursor-pointer hover:scale-[1.02] hover:shadow-2xl transition-all duration-[300ms]">
+
+                        <img src="./images/emergency.png" alt="">
+
+                        <h1 class="text-black font-bold text-xl mt-3">Emergency care</h1>
+                        <p class="mt-3">You can get 24/7 urgent care for yourself or your children and your
+                            lovely family</p>
+                    </div>
+                </div>
+                <div class="w-full md:w-[50%] xl:w-[33%] px-12 py-12 ">
+                    <div
+                        class="max-w-[350px] h-[350px] group card bg-white px-14 py-12   flex-col shadow-md rounded-3xl hover:cursor-pointer hover:scale-[1.02] hover:shadow-2xl transition-all duration-[300ms]">
+
+                        <img src="./images/tracking.png" alt="">
+
+                        <h1 class="text-black font-bold text-xl mt-3">Tracking</h1>
+                        <p class="mt-3">Track and save your medical history and health data </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- section 6 end -->
     <!-- footer start -->
     <footer>
         <section class="bg-slate-800 py-6 md:py-14">
@@ -236,6 +328,12 @@
             document.getElementById("nav-bar").classList.toggle("left_0")
             document.body.classList.toggle("overflow-hidden")
         }
+        setTimeout(() => {
+            document.getElementById("preloader").classList.toggle("hidden")
+            document.body.classList.remove("overflow-hidden");
+        }, 3000);
+
+
 
         $('.slicker').slick({
             dots: false,
@@ -246,7 +344,29 @@
             slidesToShow: 1,
         });
     </script>
+    <script>
+        let mybutton = document.getElementById("to-top-button");
+        window.onscroll = function () {
+            scrollfunction()
+        };
+        // When the user scrolls down 200px from the top of the document, show the button
+        window.onscroll = function () {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
 
+        // When the user clicks on the button, scroll to the top of the document
+        function goToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <!-- Implement the Back Top Top Button -->
+    <button id="to-top-button" onclick="goToTop()" title="Go To Top"
+        class="hidden fixed z-90 bottom-8 right-8 border-0 w-16 h-16 rounded-full drop-shadow-md bg-indigo-500 text-white text-3xl font-bold">&uarr;</button>
 </body>
 
 </html>
